@@ -11,7 +11,7 @@ class ProfileLayoutScreen extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, constraints) {
         ScreenUtil.init(context);
-        if (constraints.maxWidth < 600) {
+        if (constraints.maxWidth < 576) {
           return MobileProfileScreen(constraints: constraints,);
         } else {
           return WebProfileScreen(constraints: constraints,);
